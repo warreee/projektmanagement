@@ -1,0 +1,141 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Ward Schodts}
+
+% Voor frames
+\usepackage{mdframed}
+% Voor kleuren
+\usepackage{xcolor}
+
+\definecolor{solarback}{HTML}{d9d9d9}
+\definecolor{solarfront}{HTML}{000000}
+\mdfdefinestyle{de}{linewidth=0pt,backgroundcolor=solarback,fontcolor=solarfront}
+\newenvironment{de}[1]
+{\begin{mdframed}[style=de]\begin{mydef}{\textbf{#1:}}\\} 
+{\end{mydef}\end{mdframed}}
+\newtheorem{mydef}{Definition}
+\usepackage{float}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+\section{Was ist Projektmanagement?}
+\subsection{Projekt}
+
+\begin{de}{Projekt (DIN)}
+Vorhaben, das im wesentlichen durch  Einmaligkeit der Bedingungen in ihrer Gesamtheit gekennzeichnet ist, wie z.B.:
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Zielvorgabe,
+\item zeitlich, finanzielle oder andere Begrenzungen,
+\item Abgrenzungen gegenüber anderen Vorhaben,
+\item projektspezifische Organisation.
+\end{itemize}
+
+\end{de}
+
+\begin{de}{Projekt (allgemein)}
+Ein Projekt ist eine besondere, umfangreiche und zeitlich begrenzte
+Aufgabe von relativer Neuartigkeit mit hohem Schwierigkeitsgrad und
+Risiko, die in der Regel enge fachübergreifende Zusammenarbeit aller
+Beteiligten fordert.
+\end{de}
+
+\begin{table}[H]
+\def\arraystretch{1.2}
+\centering
+\begin{tabular}{|p{0.2\textwidth}|p{0.7\textwidth}|}
+
+\hline
+\textbf{Kriterium} & \textbf{Beschreibung} \\
+
+\hline
+Zeitliche Befristung & 
+\tabitem Festgelegter Anfangs- und Endzeitpunkt
+\\
+\hline
+Neuartigkeit &
+\vspace{-\topsep}
+\begin{itemize}
+\itemsep0em
+\setlength{\itemindent}{-1.3em}
+\item Keine sich wiederholenden Routinevorgänge
+\item Neue Aufgabestellung mit besonderer Herausforderung
+\end{itemize}
+\\
+
+\hline
+Einmaligkeit &
+\vspace{-\topsep}
+\begin{itemize}
+\itemsep0em
+\setlength{\itemindent}{-1.3em}
+\item Insgesamt einmaliges Vorhaben
+\item Einzelne Aktivitäten innerhalb des Vorhabens können sich jedoch wiederholen
+\end{itemize}\\
+
+\hline
+Größe & 
+\tabitem Umfang müss Einrichtung eines Projektes und einer Projektorganisation rechtfertigen\\
+\hline
+Komplexität und Zusammenarbeit &
+\vspace{-\topsep}
+\begin{itemize}
+\itemsep0em
+\setlength{\itemindent}{-1.3em}
+\item Verschiedene untereinander abhänge Teilaufgaben
+\item Hoher Abstimmungsbedarf
+\item Fächerübergreifende Zusammenarbeit
+\end{itemize}\\
+
+\hline
+\end{tabular}
+
+\caption{Kriterien für Projekte}
+\end{table}
+
+\begin{table}[H]
+\centering
+\def\arraystretch{1.4}
+\begin{tabular}{|P{0.4\textwidth}|P{0.4\textwidth}|}
+\hline
+\textbf{Routine-Aufgaben} & \textbf{Projekte}\\
+wiederholende Tätigkeiten & einmalige Tätigkeiten\\
+standardisierbare Tätigkeiten & individuelle Tätigkeiten\\
+trainierbare Tätigkeiten & "do it right the first time" Anspruch\\
+reproduzierbare Ergebnisse & selten reproduzierbare Ergebnisse\\
+systematische Fehler leicht erkennbar  & systematische Fehler schwer erkennbar\\
+kontinuierbare Verbesserung möglich & sofortige Korrektur notwendig\\
+meist abteilungsspezifische Abwicklung & meis interdisziplinäre Abwicklung\\
+meist statische Randbedingungen & meist dynamische Randbedingungen\\
+\hline
+\end{tabular}
+\caption{Differenz zwischen Routine und Projekt}
+\end{table}
+
+\subsubsection*{Übung}
+Schau die Übungsaufgabe (Welche Vorhaben sind Projekt?) noch mal an!
+\subsection{Projektmanagement}
+
+\begin{de}{Projektmangement (DIN)}
+Gesamtheit von Führungsaufgaben, -organisation, -techniken und
+–mittel für die Abwicklung eines Projektes.
+\end{de}
+
+\begin{de}{Projektmanagement (allgemein)}
+Projektmanagement ist eine Führungskonzeption für direkte
+fachübergreifende Koordination von Planung, Entscheidung,
+Realisierung, Überwachung und Steuerung bei der Abwicklung
+interdisziplinärer Aufgabenstellungen.
+\end{de}
+
+\end{document}
