@@ -35,6 +35,78 @@
 \usepackage{subcaption}
 
 \begin{document}
+
+\begin{titlepage}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\textsc{\LARGE TU Berlin}}\\[1.5cm] % Name of your university/college
+\textsc{\Large Projektmanagement I}\\[0.5cm] % Major heading such as course name
+\textsc{\large Zusammenfassung}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Ward \textsc{Schodts} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Dozent:} \\
+Dr.-Ing. Manfred Mach \\ % Supervisor's Name
+
+\end{flushright}
+\end{minipage}\\[4cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+%\includegraphics[scale=0.15]{sedes}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\begin{figure}
+    
+    \def\svgwidth{\columnwidth}
+    \scalebox{.2}{
+    \input{figures/logo.pdf_tex}}
+\end{figure}
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+
 \section{Was ist Projektmanagement?}
 \subsection{Projekt}
 
@@ -606,7 +678,7 @@ Steuerungsausschuß oder -ausschüsse.
 	\includegraphics[width=0.66\textwidth]{ch4/kooperation}
 
 \end{figure}	
-
+\pagebreak
 \section{Das projektteam und seine Afugaben}
 
 \begin{de}{Projektteam}
@@ -758,7 +830,7 @@ irgendeiner Weise betroffen sind.
 \centering
 \includegraphics[scale=0.35]{ch5/stakeholder}
 \end{figure}
-
+\pagebreak
 \section{Projektabwicklung, Lastenheft \& Pflichtenheft}
 
 Die Abwicklung von Projekten läuft folgenden Schritten entsprechend ab,
@@ -797,7 +869,7 @@ die teilweise zur Strukturgrundlage einer Phasenorganisation werden können:
 \end{enumerate}	
 \noindent
 (Notiz: schau noch mal die Beispiele in die Folien.)
-
+\pagebreak
 \section{Projektphasen und Meilensteine}
 
 \begin{de}{Projektphasen}
@@ -852,7 +924,7 @@ wachung/Reviews
 zur Inbetriebnahme des Projektes
 \end{enumerate}
 
-
+\pagebreak
 \section{Projektplanung und regelkreis}
 
 \begin{figure}[H]
@@ -1018,7 +1090,7 @@ Maßnahmen für einzelne Arbeitspakete:
 \item Stauchen
 \item Teilen
 \end{itemize}
-
+\pagebreak
 \section{Werkzeuge der Projketplanng und Grundlagen der Netzplantechnik}
 \subsection{Das Teufelsquadrat}
 
@@ -1068,7 +1140,7 @@ resultiert.
 (EDV-Zugriffszeit), was zu völligem Unverständnis bei der Projektleitung führt.
 	\item 
 \end{enumerate}
-
+\pagebreak
 \section{Mathematische methoden der Projektschätzung}
 
 \begin{minipage}[t]{0.5\textwidth}
@@ -1146,8 +1218,28 @@ bringen (Korrelation)
 	\item \textbf{Function Point Analysis:} Verwendet statt Lines of Code Function Points für die Berechnung
 \end{itemize}
 \end{minipage}
-
+\pagebreak
 \section{Projektcontrolling}
+\begin{de}{Projektcontrollings}
+Kontrolle ist ein systematischer Prozess zur Ermittlung von
+Abweichungen zwischen Plangrößen und Vergleichsgrößen.\\
+\textbf{Ziel:}\\
+Frühzeitiges Erkennen von Planabweichungen, um so eine
+wirkungsvolle Projektsteuerung zu ermöglichen und eine Grundlage
+für das Einleiten von korrigierenden Maßnahmen zu schaffen.\\
+\textbf{Aufgaben:}
+\begin{itemize}
+\item Informationen sammeln
+\item Projektfortschritt überwachen
+\item Soll-Ist-Vergleich: Zeit, Kosten, Qualität
+\item Ursachenanalyse für Abweichungen
+\end{itemize}
+\end{de}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{ch11/regelkreispc}
+\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -1229,6 +1321,8 @@ vertraglichen Änderungen (Stufe 8a) führen. Bei projektinternen Einflüssen m�
 vorschläge innerhalb der vertraglichen Regelung unterbreitet werden. Durch die vom Manage-
 ment eingeleiteten Änderungen (Stufe 8b) ist der Management-Regelkreis geschlossen.
 
+
+
 \subsection{Leistungsforschrittskontrolle}
 
 \subsubsection{0/50/100\%-Methode}
@@ -1274,6 +1368,22 @@ ungefähr gleich große Leistungsabschnitte liegen.
 
 \subsubsection{Earned Value-Analyse}
 
+\begin{de}{EVA}
+Durch die Gegenüberstellung von Plan-, Soll- und Istkosten werden
+Abweichungsursachen differenzierter erkannt. Mit diesem auch als Earned
+Value Analyse (EVA) bezeichneten Verfahren lassen sich wichtige Fragen
+beantworten:
+
+\begin{itemize}
+\item Wie hoch dürften die Kosten bei der geplanten Leistung sein?
+(Plankosten der Planleistung)
+\item Wie hoch sind die tatsächlichen Kosten der erbrachten Leistung?
+(Istkosten der Istleistung)
+\item Wie hoch dürften die Kosten der erbrachten Leistung laut Plan sein?
+(Plankosten der Istleistung = Sollkosten = Earned Value)
+\end{itemize}
+\end{de}
+
 $$ EV = (Ferigstellungsgrad)*Plankosten$$
 
 \begin{figure}[H]
@@ -1291,7 +1401,209 @@ $$ EV = (Ferigstellungsgrad)*Plankosten$$
 	\centering
 	\includegraphics[width=\textwidth]{ch11/eva}
 \end{figure}
+\pagebreak
+\section{Projektaufbereitung und Risikoanalyse von Projekten}
 
+\subsection{Risikomanagement}
+\begin{de}{Risiko}
+ist die Gefahr einer negativen Abweichung des
+realisierten Ergebnisses vom geplanten Ergebnis.\\
+\\
+Was zeichnet Risiken aus?
+\begin{itemize}
+\item Eintrittswahrscheinlichkeit
+\item Potentielle Schadenshöhe
+\item Gegenmaßnahme
+\end{itemize}
+\end{de}
+
+\begin{de}{Risikomanagement}
+ist eine systematische Vorgehensweise, um
+potenzielle Risiken zu identifizieren, zu bewerten sowie hierauf aufbauend
+entsprechende Maßnahmen zur Risikoverhütung bzw. –minimierung zu
+ergreifen.
+\end{de}
+
+\subsubsection{Prozess des Risikomanagements}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{ch12/prozess}
+\end{figure}
+
+\begin{enumerate}
+
+\item Risikoanalyse
+	\begin{enumerate}
+	\item Risikoidentifikation
+		\begin{itemize}
+		\item Finanzielle Risiken
+		\item Personalrisiken
+		\item Technische Risiken
+		\item Produktrisiken
+		\end{itemize}
+	\item Risikobewertung (mit volgende Elemente)
+		\begin{itemize}
+		\item Riskobeschreibung
+		\item Eintrittswahrschienlichkeit
+		\item Potentielle schadenshöhe
+		\item Risikokosten = potentielle Schadenshöhe * Eintrittswahrscheinlichkeit
+		\end{itemize}	
+	\end{enumerate}
+	
+\item Risikoabsicherung
+	\begin{enumerate}
+	\item Maßnahmenplanung (mit volgende Elemente)
+		\begin{itemize}
+		\item Maßnahme (inkl. Beschreibung)
+		\item Kosten der Maßnahme
+		\item Wirkung der Maßnahme (Schadenshöhe/Wahrschienlichkeit senken)
+		\end{itemize}
+		
+	\item Maßnahmenbewertung
+		\begin{itemize}
+		\item Kostenbewertung: Risikokosten vor Maßnahme > Maßnahme + Risikokosten nach Maßnahme
+		\item Synergien nutzen
+		\end{itemize}
+	
+	\item Risiko-Controlling
+	\end{enumerate}
+
+\item Risikoeintrittmanagement
+	\begin{enumerate}
+	\item Störungsmangement
+	
+	\item Krisenmanagement
+	
+	\item Katastrophenmanagement
+	\end{enumerate}
+
+\end{enumerate}
+
+\subsection{Gründe für Projektfehlschläge}
+
+\begin{itemize}
+\item Unklare Zielsetzung.
+\item Mangelhafte Unterstützung des Projektteams durch Auftraggeber bzw.
+Geschäftsführung.
+\item Unzureichende Qualifikation des Projektteams.
+\item Unklare Informations- und Entscheidungswege.
+\item Fehlendes Planungs- und Controlling-System.
+\item Der (interne oder externe) Auftraggeber bringt im Laufe des Projektes neue
+Forderungen ein, welche die ursprünglichen Projektziele gefährden.
+\item Der aufgestellte Terminplan ist im wesentlichen vom Wunschdenken diktiert.
+\end{itemize}
+
+\subsection{Faktoren zur Vermeidung von Projektfehlschlägen}
+
+\subsubsection{Übergeordnetes Management}
+\begin{itemize}
+\item Festlegung von Prioritäten bei knappen Ressourcen
+\item Ausstattung des Projektleiters mit ausrechenden Bufugnissen
+\item Schnelle Entscheidungen in Konflikt- und Problemfällen
+\end{itemize}
+
+\subsubsection{Projektleiter}
+
+\begin{itemize}
+\item ausreichendes Fach-Know-how
+\item ausreichende Führungsqualität und Führungserfahrun
+\item schnelle Entscheidungen
+\end{itemize}
+
+\subsubsection{Projektmitarbeiter}
+
+\begin{itemize}
+\item ausreichendes Fachwissen
+\item ausreichende Kooperationsfähigkeit und Kooperationsbereitschaft
+\item hohe Leistungsmotivation
+\end{itemize}
+
+\subsubsection{Auftraggeber}
+
+\begin{itemize}
+\item Definition realistischer und messbarer Projektziele
+\item Überprüfung der Projektziele
+\item schriftliche Fixierung und formelle Verabschiedung des Projektauftrags durch den Auftraggeber
+und Auftragnehmer
+\end{itemize}
+
+\subsection{Projektabschluss}
+
+\subsubsection{Aufgaben}
+\begin{itemize}
+\item Analyse des gesamten Projektablaufes für Erkenntnisgewinn für
+zukünftige Projekte
+\item Inhaltlicher und emotionaler Abschluss des Projektes
+\item Wertschätzung der Arbeit zur positiven Motivation für zukünftige Projekte
+\end{itemize}
+
+\subsubsection{Teilprozesse}
+
+\begin{itemize}
+
+\item Überleitungs- und Erhaltungsplanung:
+	\begin{itemize}
+	\item Überleitungsplan: Zeigt auf, was zukünftig mit denen im Projekt
+eingesetzten Ressourcen passieren soll.
+	\item Erhaltungsplan
+	\end{itemize}
+	
+\item Endabnahme der Projektergebnisse:
+	\begin{itemize}
+	\item Abnahmetest: Können z.B. Produkttest sein
+	\item Produktabnahmebericht/Abnahmeprotokoll: Beschreibung der
+Abnahme und eventueller Nachforderungen (z.B. Gewährleitung)
+	\item Vereinbarungen/Vorkehrungen für die künftige Einsatzphase mit dem
+Kunden: Vereinbarung über Leistungen wie z.B. Wartung,
+Weiterentwicklung, Anwenderunterstützung
+	\item Ermittlung der Kundenzufriedenheit
+	\end{itemize}
+	
+\item Projektauswertung
+	\begin{itemize}
+	\item Ermittlung der strategischen und operativen Zielerreichung
+	\item Ermittlung der Ergebnisse auf Sach- (z.B. Nachkalkulation) und
+Beziehungsebene (z.B. Einschätzung der Atmosphäre)
+	\item Erhebung von Kennzahlen zum Projektabschluss zur Ermittlung der
+operativen Zielerreichung. Z.B. Kosten- und Termintreue,
+Änderungshäufigkeiten, Fehlerquoten...
+	\end{itemize}
+	
+\item Projektinterne Abschlussbesprechung (+ wichtigste Stakeholder)
+	\begin{itemize}
+	\item Reflexion im Projektteam über die im Projekt gesammelten
+Erfahrungen
+	\item Projektbeurteilung aus Sicht des Projektteams
+	\item Besprechung kann auf die wichtigsten Stakeholder (PM Office, Kunden
+etc.) ausgeweitet werden
+Themen: Zielerreichung, Zufriedenheit, Ablauf des
+Projektmanagements, Verbesserungspotenzial, Konsequenzen aus
+Erfahrungen...)
+	\end{itemize}
+	
+\item Abschlussbericht und Fertigstellung der Projektdokumentation
+
+	\begin{itemize}
+	\item Festhalten des Projektgesamtergebnisses
+	\item Sicherung der Erfahrung für Folgeprojekte
+	\end{itemize}
+	
+
+\end{itemize}
+\pagebreak
+\section{Projektmanagement-Konzept}
+
+\begin{figure}[H]
+	\centering
+	\caption*{Drei-Säule-Hypothese}
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{ch13/saule}
+	\end{subfigure}
+	~
+	\begin{subfigure}{0.49\textwidth}
+		\includegraphics[width=\textwidth]{ch13/saule2}
+	\end{subfigure}
+\end{figure}
 
 
 
